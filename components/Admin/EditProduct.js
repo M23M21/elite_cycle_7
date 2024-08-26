@@ -204,6 +204,12 @@ const EditProduct = () => {
     );
 };
 
-export default function EditProductPage() {
-    return <EditProductComponent />;
+function EditProductComponent() {
+    return (
+      <Suspense fallback={<div>Loading...</div>}>
+        <EditProduct />
+      </Suspense>
+    );
   }
+  
+  export default EditProductComponent;
