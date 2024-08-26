@@ -5,7 +5,6 @@ import { db } from "../../utils/firebaseConfig";
 import { doc, getDoc, updateDoc, deleteDoc } from "firebase/firestore";
 import { useAuth } from "../../components/Auth/AuthProvider";
 import { Suspense } from 'react';
-import EditProduct from '../../components/Admin/EditProduct';
 
 const fetchProduct = async (category, productId) => {
     const productRef = doc(db, `BikeCategories/${category}/bikes`, productId);
