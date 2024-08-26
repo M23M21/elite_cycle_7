@@ -1,7 +1,7 @@
 'use client';
 import React, { useEffect, useState } from 'react';
 import { useRouter } from "next/router";
-import { db } from "../../lib/firebaseConfig";
+import { db } from "../../utils/firebaseConfig";
 import { doc, getDoc } from "firebase/firestore";
 
 const ProductDetails = ({ productId }) => {
